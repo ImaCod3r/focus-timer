@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #121214;
+
+    --base-color: 194;
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+
+    --text-color: #FFF;
+
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+main{
+    align-self: end;
+    justify-self: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button svg{
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+.hide {
+    display: none;
+}
+
+#timer {
+    display: flex;
+    align-self: flex-end;
+
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+    font-weight: 700;
+}
+
+#controls {
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(10rem, 5rem + 10vw, 10.8rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+
+    border-radius: 9999px;
+    background-color: var(--bg-primary-light);
+}
+
+footer{
+    align-self: end;
+    justify-self: end;
+
+    padding: 0 4rem 3.2rem 0;
+}
